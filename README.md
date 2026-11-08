@@ -1,83 +1,29 @@
-# Hi 👋, I'm 4t.Ritch
+<!--
+  4tRitch / PS2 ARCHIVE — GitHub Profile README
+  All graphics are local PNG files in ./assets.
+  The menu and audio player are visual (static); project cards and links below are real hyperlinks.
+-->
 
-### An experienced C# developer
+<div align="center">
+  <img src="./assets/01-hero.png" width="100%" alt="4tRitch — Software Developer. Retro PlayStation 2 system-menu inspired banner in graphite and violet." />
+  <img src="./assets/02-system.png" width="100%" alt="About 4tRitch: software engineer building creative software and anime projects. System: Arch Linux, Hyprland, fish and Neovim." />
+  <img src="./assets/03-stack.png" width="100%" alt="Technical stack: Rust, C sharp, TypeScript, Svelte, Go, PostgreSQL, Docker, Linux, Git and terminal interfaces." />
+  <img src="./assets/04-projects-header.png" width="100%" alt="Featured projects" />
+  <a href="https://okaimono.dev" title="Okaimono — anime collection and calendar"><img src="./assets/05-okaimono.png" width="32%" alt="Okaimono — anime collections, calendar and friends. Rust and Svelte." /></a>
+  <a href="https://github.com/4tRitch/webcore-ui" title="webcore-ui — 2000s web interface study"><img src="./assets/06-webcore.png" width="32%" alt="webcore-ui — retro interfaces inspired by 2005 to 2008 web design." /></a>
+  <a href="https://github.com/4tRitch/clikity" title="Clikity — desktop ClickUp task creator"><img src="./assets/07-clikity.png" width="32%" alt="Clikity — create ClickUp tasks using Tauri and Svelte." /></a>
+  <img src="./assets/08-player.png" width="100%" alt="Decorative PS2-era audio player with a fictional demo track, equalizer and physical-style transport controls." />
+  <img src="./assets/09-footer.png" width="100%" alt="4tRitch at Arch Linux command line, with PlayStation-style button legends." />
+</div>
 
-- 🔭 I'm currently working on **a SaaS focused on modern multimedia consumers who use multiple platforms like Netflix, HBO, and others**
-- 🌱 I'm currently learning **PostgreSQL, Rust, Networking, and Marketing**
-- 🤝 I'm looking for help with **learning UI/UX design inspired by Apple design with a Y2K style**
-- 💬 Ask me about **Game Development**
-
-### Languages and Tools
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://www.gnu.org/software/bash/" target="_blank">
-        <img src="https://skillicons.dev/icons?i=bash" width="40" height="40" alt="Shell" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://learn.microsoft.com/dotnet/csharp/" target="_blank">
-        <img src="https://skillicons.dev/icons?i=cs" width="40" height="40" alt="C#" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://git-scm.com/" target="_blank">
-        <img src="https://skillicons.dev/icons?i=git" width="40" height="40" alt="Git" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank">
-        <img src="https://skillicons.dev/icons?i=js" width="40" height="40" alt="JavaScript" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.kernel.org/" target="_blank">
-        <img src="https://skillicons.dev/icons?i=linux" width="40" height="40" alt="Linux" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.postgresql.org/" target="_blank">
-        <img src="https://skillicons.dev/icons?i=postgres" width="40" height="40" alt="PostgreSQL" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.postman.com/" target="_blank">
-        <img src="https://skillicons.dev/icons?i=postman" width="40" height="40" alt="Postman" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.rust-lang.org/" target="_blank">
-        <img src="https://skillicons.dev/icons?i=rust" width="40" height="40" alt="Rust" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.selenium.dev/" target="_blank">
-        <img src="https://skillicons.dev/icons?i=selenium" width="40" height="40" alt="Selenium" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.sqlite.org/" target="_blank">
-        <img src="https://skillicons.dev/icons?i=sqlite" width="40" height="40" alt="SQLite" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://unity.com/" target="_blank">
-        <img src="https://skillicons.dev/icons?i=unity" width="40" height="40" alt="Unity" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">Shell</td>
-    <td align="center">C#</td>
-    <td align="center">Git</td>
-    <td align="center">JS</td>
-    <td align="center">Linux</td>
-    <td align="center">PostgreSQL</td>
-    <td align="center">Postman</td>
-    <td align="center">Rust</td>
-    <td align="center">Selenium</td>
-    <td align="center">SQLite</td>
-    <td align="center">Unity</td>
-  </tr>
-</table>
+<div align="center">
+  <sub>
+    <a href="https://github.com/4tRitch">GITHUB</a>
+    &nbsp; · &nbsp;
+    <a href="https://okaimono.dev">OKAIMONO</a>
+    &nbsp; · &nbsp;
+    <a href="https://github.com/4tRitch?tab=repositories">REPOSITORIES</a>
+    &nbsp; · &nbsp;
+    <a href="https://x.com/Dot_Choco">X / TWITTER</a>
+  </sub>
+</div>
