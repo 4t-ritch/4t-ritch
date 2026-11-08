@@ -1,43 +1,31 @@
-# 4tRitch // PS2 CYBERCORE — kit de GitHub
+# 4tRitch // PS2 Cybercore — versión sin cortes internos
 
-Este kit preserva la composición del arte aprobado (en vez de recrearlo con cajas y fuentes nuevas). El README se compone de **36 fragmentos de imagen con enlaces independientes**.
+El README reproduce el diseño violeta aprobado usando **paneles completos**. La versión anterior fragmentaba `WHOAMI` y `SYSTEM STATUS` horizontalmente en varias filas, por eso GitHub introducía cortes visuales en las palabras, los marcos y la información.
 
 ## Instalación
 
-1. Haz un respaldo del README actual de `4tRitch/4tRitch`.
-2. Copia **README.md** y la carpeta **assets/** completa a la raíz del repositorio.
-3. Haz commit/push a `main` y abre tu perfil.
-4. La variante `README-TEXT-CORRECTED.md` corrige los textos *dentro de las tarjetas* de Okaimono, webcore-ui y Clikity; para usarla renómbrala a `README.md`.
+1. Respalda el `README.md` actual de `4tRitch/4tRitch`.
+2. Copia `README.md` y **toda** la carpeta `assets/` a la raíz del repositorio.
+3. Haz commit y push a `main`. GitHub mostrará el nuevo README en tu perfil.
 
-## Qué funciona
+No se realizaron cambios en tu repositorio desde esta conversación.
 
-- Las 3 tarjetas de proyectos abren sus enlaces correspondientes.
-- Los 10 iconos tecnológicos abren su sitio oficial o repositorio relacionado.
-- Las 4 opciones del menú lateral usan anclas locales; las zonas del footer también son enlaces.
-- `whoami` y `system status` son imágenes con enlaces útiles.
-- El reproductor es una ilustración; pulsarlo abre Spotify, pero **no reproduce nada dentro de GitHub**.
+## Archivos y variantes
 
-## Limitaciones y decisiones técnicas
+- `README.md`: **recomendado**. Sin cortes internos y con cada tarjeta de proyecto enlazada. El stack y el footer son imágenes completas. El menú abre la sección de navegación de texto.
+- `README-MORE-LINKS.md`: aspecto visual muy parecido, pero cada icono de tecnología y cada región del footer llevan a su propio enlace. Usa cortes **verticales de altura completa** en estas dos franjas; puede haber una diferencia de un píxel en las uniones por el redondeo del navegador. Renómbralo a `README.md` para usarlo.
+- `README-CORRECTED.md`: misma disposición que la versión recomendada, pero reemplaza los textos equivocados de las tarjetas con descripciones reales. Esta variante pierde un poco de fidelidad en la zona de texto, aunque mantiene las ilustraciones y marcos.
+- `previews/DEFAULT-DESKTOP.png`, `LINKED-DESKTOP.png`, `CORRECTED-DESKTOP.png`: capturas de pruebas locales con los assets del README. **No son capturas del sitio GitHub.com**.
+- `previews/ASSEMBLED-SOURCE.png`: montaje sin modificaciones del diseño original para comparar límites de las piezas.
+- `source/approved-art.png`, `source/art-with-corrected-text.png`: ilustraciones fuente que permiten regenerar los assets.
+- `source/layout.json` y `source/rebuild.py`: coordenadas y script para regenerar cada imagen (requiere Pillow).
 
-- **El texto dentro de los PNG no es editable desde Markdown.** La variante corregida reemplaza únicamente las columnas de texto de las tarjetas con una tipografía y textura similar.
-- Al ser varios fragmentos de una misma composición, las partes se unen con un solo `<p>` y separadores `<br />` para no heredar márgenes entre párrafos en GitHub.
-- No se utilizan CSS, JavaScript ni mapas de imágenes, que GitHub no permite en un README.
-- Las ilustraciones son estáticas. En móvil se reduce la escala y el texto puede ser pequeño.
-- `previews/` contiene capturas **locales aproximadas**, no capturas tomadas desde GitHub.com.
-- Los textos de la maqueta original eran conceptos visuales: por ejemplo Okaimono no es una CLI de compras, y Clikity no es una CLI/TUI. El bloque de texto accesible y la variante corregida contienen las descripciones correctas.
+## Qué es realmente clicable
 
-## Contenido
+Las tarjetas de Okaimono, webcore-ui y Clikity enlazan a sus destinos. El panel de menú lleva al desplegable de navegación, `WHOAMI` abre los repositorios, el estado del sistema enlaza a los dotfiles y el reproductor abre una explicación. También hay enlaces de texto accesibles a proyectos, stack y contacto. En `README-MORE-LINKS.md`, cada tecnología y control del footer tiene enlace propio.
 
-- `README.md`: fidelidad visual máxima con el arte aprobado.
-- `README-TEXT-CORRECTED.md`: variante con texto de tarjetas corregido.
-- `assets/`: cada pieza enlazable (incluye 3 tarjetas alternativas con texto corregido).
-- `assets/reference-art.png`: el arte aprobado del cual se derivan las piezas.
-- `source/rebuild.py`: regenera los fragmentos a partir de las imágenes de referencia.
+GitHub no admite JavaScript, CSS personalizado ni mapas de imagen interactivos en el README. Por tanto, no es posible tener zonas clicables distintas dentro de **una misma imagen** ni hacer funcionar los botones del reproductor. La solución usa imágenes independientes, completas y sin solapar filas internas.
 
-## Nota sobre enlaces internos
+## Importante sobre los textos
 
-GitHub puede normalizar anclas HTML en ciertos contextos. Si tus anclas internas no funcionan, usa los enlaces externos de las tarjetas y los enlaces de navegación textual.
-
-## Variante adicional: paneles individuales completos
-
-Además se incluye `README-COMPLETE-PANELS.md` y `assets/complete-panels/`. Esta opción utiliza 10 recursos independientes, cada uno entero (no bandas cortadas). Conserva el diseño original, pero el menú lateral se comporta como un solo enlace; los enlaces individuales están en el desplegable de navegación textual.
+El diseño artístico aprobado incluía textos de ejemplo incorrectos: Okaimono no es una CLI de compras y Clikity no es una TUI. La navegación textual y `README-CORRECTED.md` usan las descripciones reales.
