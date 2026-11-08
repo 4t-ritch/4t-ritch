@@ -9,7 +9,7 @@ from PIL import Image, ImageChops
 
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCE_PATH = ROOT / "source/approved-artwork-muted.png"
+SOURCE_PATH = ROOT / "source/approved-artwork-aged.png"
 SOURCE = Image.open(SOURCE_PATH).convert("RGB") if SOURCE_PATH.exists() else None
 OUT = ROOT / "assets/clickable"
 
@@ -89,6 +89,15 @@ class ClickablePanelTests(unittest.TestCase):
         self.assertNotIn("Dot_Choco", readme)
         self.assertIn("Amira Elfeky - A Dozen Roses", readme)
 
+    def test_player_links_as_a_whole_to_the_song(self):
+        readme = (ROOT / "README.md").read_text()
+        self.assertRegex(
+            readme,
+            r'<a href="https://www\.youtube\.com/watch\?v=RPNSFZ9xrGo" title="Amira Elfeky - A Dozen Roses">'
+            r'<img src="assets/10-player\.png" width="100%" align="top" '
+            r'alt="Amira Elfeky - A Dozen Roses"></a>',
+        )
+
     def test_generated_player_matches_muted_artwork_crop(self):
         generated = Image.open(ROOT / "assets/10-player.png").convert("RGB")
         expected = SOURCE.crop((0, 761, 1448, 967))
@@ -116,7 +125,7 @@ class ClickablePanelTests(unittest.TestCase):
 
     def test_player_source_is_not_an_independent_generator_input(self):
         generator = (ROOT / "source/extract_panels.py").read_text()
-        self.assertIn("approved-artwork-muted.png", generator)
+        self.assertIn("approved-artwork-aged.png", generator)
         self.assertNotIn("player-amira-elfeky.png', ROOT / 'assets/10-player.png'", generator)
         player_source = Image.open(ROOT / "source/player-amira-elfeky.png").convert("RGB")
         self.assertIsNone(ImageChops.difference(player_source, SOURCE.crop((0, 761, 1448, 967))).getbbox())
