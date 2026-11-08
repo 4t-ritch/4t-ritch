@@ -23,3 +23,6 @@ Delegated direct: reading prepares multi-file edits. Single writer. Test-first d
 
 ## Next step
 Parent spot-checks final diff and reports the two flattened-menu clickability limitations.
+
+## Closure evidence
+Implementation commit: 8953d3c. Independent verifier confirmed 3 passing tests, exact pixel reconstruction and intact local 900/375px previews. Parent diff check passed. Risk assessment unavailable due untracked inventory; treated as high and independently verified. RDD remains off. Live GitHub rendering not checked; no push performed. Hero and mini-menu remain whole-panel links, not individually interactive rows.
