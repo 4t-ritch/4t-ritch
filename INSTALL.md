@@ -1,46 +1,20 @@
-# PS2 Cybercore Profile — repair verified in local browser
+# 4t-ritch — PS2 Cybercore updated edition
 
-The original design artwork is reused directly. Each **included asset** is a complete
-panel or an entire horizontal band. The incorrect project card fragments and patched
-text stickers from the old packages have been removed.
+## Changes
+- Renamed all displayed profile names to `4t-ritch`: header, WHOAMI and terminal footer.
+- Replaced webcore-ui card with **JDotParser** (C# parser/serializer with a custom text syntax and cryptography layer).
+- Replaced Clikity card with **DCTI** (C# terminal UI library).
+- Corrected Okaimono card description (anime collection/calendar/Crew; Rust + Svelte).
+- Updated the README links to the **4t-ritch** GitHub account.
+- Preserved original purple/charcoal PS2 styling, composition, music player and graphics.
 
 ## Install
+1. Extract this ZIP.
+2. Copy `README.md` and the whole `assets/` folder into your repository `https://github.com/4t-ritch/4t-ritch`.
+3. Commit and push.
 
-1. Back up the existing profile README in your GitHub repo `4tRitch/4tRitch`.
-2. Copy `README.md` and the whole `assets/` directory to the repository root.
-3. Commit and push to `main`.
-4. Inspect your public profile page in both desktop and mobile layouts.
+**Alternative:** `README-SEAMLESS.md` (rename to `README.md`) uses only six full-width pieces, without horizontal panel splits; clickable repo links remain available in the PROJECT FILES dropdown.
 
-## Versions
+For GitHub README security reasons the controls inside images are decorative, but image panels and project links in the expandable content are clickable. The PNG font has been rasterized; no font files are included.
 
-- `README.md` **recommended**: separate complete menu, whoami and status modules,
-  plus untouched hero, tech stack, featured-projects row, audio player and footer.
-  Each linked panel is independently clickable. The three project links are inside
-  the clickable `PROJECT FILES` disclosure underneath the artwork.
-- `README-SEAMLESS.md`: all six full-width bands, preserving every original source
-  pixel. If GitHub inserts any gaps in the recommended layout, rename this file
-  to `README.md` to prioritize exact appearance. Individual text links remain below.
-
-## What's actually interactive?
-
-- Menu, WHOAMI, status, and other large image modules can link to destinations.
-- Expandable sections, links to the actual projects/technologies and contact work.
-- The art's internal menu lines, project cards, CD buttons and console button
-  prompts are **not individual clickable hotspots**. GitHub disables CSS/JS
-  overlays and SVG-in-img hyperlinks; an image has only one enclosing link.
-
-## Known artwork issue
-
-The original approved mockup contains incorrect descriptive text in the project
-images (e.g., Okaimono isn't a CLI shopping assistant). The `PROJECT FILES`
-section includes the accurate descriptions and links. Fixing those words within
-artwork requires repainting that graphic, not cropping it.
-
-## Previews
-
-- `previews/GITHUB-LIKE-DESKTOP.png` — locally rendered `README.md`.
-- `previews/SEAMLESS-DESKTOP.png` — locally rendered fallback.
-- `previews/PIXEL-PERFECT-COMPOSITION.png` — matches the original source pixels.
-
-Neither preview is a screenshot from GitHub.com, so tiny layout differences
-may remain. No files have been pushed to your repository automatically.
+The image elements can be updated using `source/approved-artwork-updated.png` and the `source/crop-bounds.json` geometry; original source remains `source/approved-artwork.png` for reference.

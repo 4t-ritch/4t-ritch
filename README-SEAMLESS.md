@@ -1,4 +1,4 @@
-<!-- 4tRitch // PS2 profile: pixel-accurate bands; links provided below artwork. -->
+<!-- 4t-ritch // PS2 profile: pixel-accurate bands; links provided below artwork. -->
 <div align="center">
 <div><a href="#navigation"><img src="assets/bands/01-header.png" width="100%" align="top" alt="01-header"></a></div>
 <div><a href="#profile"><img src="assets/bands/02-about-row.png" width="100%" align="top" alt="02-about-row"></a></div>
@@ -29,8 +29,8 @@ Software developer focused on Rust, C#, TypeScript, Svelte, Linux and building u
 <summary>▤ PROJECT FILES — accurate descriptions and links</summary>
 
 - [**Okaimono**](https://okaimono.dev/) — Anime collection manager with calendar, collections and Crew. Built using Rust, Svelte and PostgreSQL.
-- [**webcore-ui**](https://github.com/4tRitch/webcore-ui) — Research and static HTML/CSS demos of Japanese retro portal UI from 2005–2008.
-- [**Clikity**](https://github.com/4tRitch/clikity) — Desktop ClickUp task creator built with Tauri, SvelteKit and TypeScript.
+- [**JDotParser**](https://github.com/4t-ritch/JDotParser) — C# text serializer/parser using a custom syntax and an optional cryptography layer.
+- [**DCTI**](https://github.com/4t-ritch/DCTI) — Terminal user interface library for C# console applications.
 
 </details>
 
@@ -38,7 +38,7 @@ Software developer focused on Rust, C#, TypeScript, Svelte, Linux and building u
 <details>
 <summary>▦ SYSTEM COMPONENTS — technology links</summary>
 
-[Rust](https://www.rust-lang.org/) · [C#](https://learn.microsoft.com/dotnet/csharp/) · [TypeScript](https://www.typescriptlang.org/) · [Svelte](https://svelte.dev/) · [Go](https://go.dev/) · [PostgreSQL](https://www.postgresql.org/) · [Docker](https://www.docker.com/) · [Arch Linux](https://archlinux.org/) · [Git](https://git-scm.com/) · [CLI / TUI](https://github.com/4tRitch/lnx-df)
+[Rust](https://www.rust-lang.org/) · [C#](https://learn.microsoft.com/dotnet/csharp/) · [TypeScript](https://www.typescriptlang.org/) · [Svelte](https://svelte.dev/) · [Go](https://go.dev/) · [PostgreSQL](https://www.postgresql.org/) · [Docker](https://www.docker.com/) · [Arch Linux](https://archlinux.org/) · [Git](https://git-scm.com/) · [CLI / TUI](https://github.com/4t-ritch/lnx-df)
 
 </details>
 
@@ -54,6 +54,6 @@ The CD player is artwork inspired by early-2000s music interfaces, not an actual
 <details>
 <summary>✉ CONTACT</summary>
 
-[GitHub](https://github.com/4tRitch) · [X / @Dot_Choco](https://x.com/Dot_Choco)
+[GitHub](https://github.com/4t-ritch) · [X / @Dot_Choco](https://x.com/Dot_Choco)
 
 </details>
