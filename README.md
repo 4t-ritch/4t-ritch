@@ -1,59 +1,11 @@
 <!-- 4t-ritch // PS2 profile: complete independent panels, no chopped text or borders. -->
 <div align="center">
-<div><a href="#navigation" title="4t-ritch — home / navigation"><img src="assets/01-hero.png" width="100%" align="top" alt="4t-ritch — home / navigation"></a></div>
-<div><a href="#navigation" title="Navigation"><img src="assets/02-menu.png" width="19.86564%" align="top" alt="Navigation"></a><a href="#profile" title="Whoami · profile"><img src="assets/03-whoami.png" width="40.97287%" align="top" alt="Whoami · profile"></a><a href="https://github.com/4t-ritch/lnx-df" title="System · Arch Linux / Hyprland"><img src="assets/04-system.png" width="39.04149%" align="top" alt="System · Arch Linux / Hyprland"></a></div>
-<div><a href="#tech" title="Tech stack"><img src="assets/05-stack.png" width="100%" align="top" alt="Tech stack"></a></div>
-<div><a href="#projects"><img src="assets/bands/04-projects.png" width="100%" align="top" alt="Featured projects — Okaimono, JDotParser, DCTI"></a></div>
-<div><a href="#music" title="Decorative PS2 audio player"><img src="assets/10-player.png" width="100%" align="top" alt="Decorative PS2 audio player"></a></div>
-<div><a href="#navigation" title="Navigation footer"><img src="assets/11-footer.png" width="100%" align="top" alt="Navigation footer"></a></div>
+<div><a id="top" href="#profile" title="4t-ritch — profile"><img src="assets/01-hero.png" width="100%" align="top" alt="4t-ritch — profile and system menu"></a></div>
+<div><a href="#profile" title="Profile navigation"><img src="assets/02-menu.png" width="19.86564%" align="top" alt="Menu — profile, projects, tech stack, and other"></a><a id="profile" href="https://github.com/4t-ritch" title="GitHub profile"><img src="assets/03-whoami.png" width="40.97287%" align="top" alt="Whoami — 4t-ritch profile"></a><a href="https://github.com/4t-ritch/lnx-df" title="System dotfiles"><img src="assets/04-system.png" width="39.04149%" align="top" alt="System status — Arch Linux and Hyprland"></a></div>
+<div><img src="assets/clickable/tech-heading.png" width="100%" align="top" alt="Tech stack"></div>
+<div><a id="tech" href="https://www.rust-lang.org/" title="Rust"><img src="assets/clickable/tech-01.png" width="13.37%" align="top" alt="Rust"></a><a href="https://isocpp.org/" title="C++"><img src="assets/clickable/tech-02.png" width="9.51%" align="top" alt="C++"></a><a href="https://www.typescriptlang.org/" title="TypeScript"><img src="assets/clickable/tech-03.png" width="10.50%" align="top" alt="TypeScript"></a><a href="https://svelte.dev/" title="Svelte"><img src="assets/clickable/tech-04.png" width="9.01%" align="top" alt="Svelte"></a><a href="https://go.dev/" title="Go"><img src="assets/clickable/tech-05.png" width="8.94%" align="top" alt="Go"></a><a href="https://www.postgresql.org/" title="PostgreSQL"><img src="assets/clickable/tech-06.png" width="10.37%" align="top" alt="PostgreSQL"></a><a href="https://www.docker.com/" title="Docker"><img src="assets/clickable/tech-07.png" width="8.94%" align="top" alt="Docker"></a><a href="https://archlinux.org/" title="Linux / Arch Linux"><img src="assets/clickable/tech-08.png" width="9.00%" align="top" alt="Linux"></a><a href="https://git-scm.com/" title="Git"><img src="assets/clickable/tech-09.png" width="9.07%" align="top" alt="Git"></a><a href="https://github.com/4t-ritch/lnx-df" title="CLI / TUI"><img src="assets/clickable/tech-10.png" width="10.34%" align="top" alt="CLI / TUI"></a></div>
+<div><img src="assets/clickable/projects-heading.png" width="100%" align="top" alt="Featured projects"></div>
+<div><a id="projects" href="https://okaimono.dev/" title="Okaimono"><img src="assets/clickable/project-1.png" width="33.91%" align="top" alt="Okaimono — anime collection manager"></a><a href="https://github.com/4t-ritch/JDotParser" title="JDotParser"><img src="assets/clickable/project-2.png" width="33.08%" align="top" alt="JDotParser project"></a><a href="https://github.com/4t-ritch/DCTI" title="DCTI"><img src="assets/clickable/project-3.png" width="32.80%" align="top" alt="DCTI project"></a></div>
+<div><img src="assets/10-player.png" width="100%" align="top" alt="Decorative PS2 audio player"></div>
+<div><img src="assets/clickable/footer-1.png" width="45.16%" align="top" alt="Terminal prompt"><a href="#projects" title="Projects"><img src="assets/clickable/footer-2.png" width="24.98%" align="top" alt="Projects"></a><a id="contact" href="https://x.com/Dot_Choco" title="X / @Dot_Choco"><img src="assets/clickable/footer-3.png" width="14.58%" align="top" alt="Contact — X / @Dot_Choco"></a><a href="#top" title="Back to top"><img src="assets/clickable/footer-4.png" width="14.99%" align="top" alt="Back"></a></div>
 </div>
-
-<a id="navigation"></a>
-<details>
-<summary>◉ SYSTEM MENU — navigation</summary>
-
-[01 — Profile](#profile) · [02 — Projects](#projects) · [03 — Tech stack](#tech) · [04 — Contact](#contact)
-
-</details>
-
-<a id="profile"></a>
-<details>
-<summary>▣ WHOAMI — details</summary>
-
-Software developer focused on Rust, C#, TypeScript, Svelte, Linux and building useful interfaces and tools. I enjoy retro UI, anime, game development and automation.
-
-</details>
-
-<a id="projects"></a>
-<details>
-<summary>▤ PROJECT FILES — accurate descriptions and links</summary>
-
-- [**Okaimono**](https://okaimono.dev/) — Anime collection manager with calendar, collections and Crew. Built using Rust, Svelte and PostgreSQL.
-- [**JDotParser**](https://github.com/4t-ritch/JDotParser) — C# text serializer/parser using a custom syntax and an optional cryptography layer.
-- [**DCTI**](https://github.com/4t-ritch/DCTI) — Terminal user interface library for C# console applications.
-
-</details>
-
-<a id="tech"></a>
-<details>
-<summary>▦ SYSTEM COMPONENTS — technology links</summary>
-
-[Rust](https://www.rust-lang.org/) · [C#](https://learn.microsoft.com/dotnet/csharp/) · [TypeScript](https://www.typescriptlang.org/) · [Svelte](https://svelte.dev/) · [Go](https://go.dev/) · [PostgreSQL](https://www.postgresql.org/) · [Docker](https://www.docker.com/) · [Arch Linux](https://archlinux.org/) · [Git](https://git-scm.com/) · [CLI / TUI](https://github.com/4t-ritch/lnx-df)
-
-</details>
-
-<a id="music"></a>
-<details>
-<summary>♫ AUDIO — PS2 player</summary>
-
-The CD player is artwork inspired by early-2000s music interfaces, not an actual audio player.
-
-</details>
-
-<a id="contact"></a>
-<details>
-<summary>✉ CONTACT</summary>
-
-[GitHub](https://github.com/4t-ritch) · [X / @Dot_Choco](https://x.com/Dot_Choco)
-
-</details>
