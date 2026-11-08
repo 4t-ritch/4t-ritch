@@ -47,11 +47,26 @@ class ClickablePanelTests(unittest.TestCase):
         readme = (ROOT / "README.md").read_text()
         self.assertNotRegex(readme, r"<\s*details\b")
         self.assertNotRegex(readme, r"<\s*summary\b")
-        self.assertNotRegex(readme, r'<a\b[^>]*>\s*<img src="assets/10-player\.png"')
         ids = set(re.findall(r'\bid=["\']([^"\']+)["\']', readme))
         fragments = re.findall(r'href=["\']#([^"\']+)["\']', readme)
         self.assertTrue(fragments)
         self.assertFalse(set(fragments) - ids, f"dangling fragments: {set(fragments) - ids}")
+
+    def test_profile_panels_are_not_navigation_and_keep_anchor_ids(self):
+        readme = (ROOT / "README.md").read_text()
+        for asset in ("01-hero.png", "02-menu.png", "03-whoami.png", "clickable/footer-1.png"):
+            self.assertNotRegex(readme, rf'<a\b[^>]*>\s*<img src="assets/{re.escape(asset)}"')
+        self.assertRegex(readme, r'<(?:div|[^>]+)\bid=["\']top["\']')
+        self.assertRegex(readme, r'<(?:div|[^>]+)\bid=["\']profile["\']')
+        self.assertIn('href="https://x.com/4t_ritch"', readme)
+        self.assertNotIn("Dot_Choco", readme)
+        self.assertIn("Amira Elfeky - A Dozen Roses", readme)
+
+    def test_generated_player_matches_normalized_source(self):
+        generated = Image.open(ROOT / "assets/10-player.png").convert("RGB")
+        approved = Image.open(ROOT / "source/player-amira-elfeky.png").convert("RGB")
+        self.assertEqual(approved.size, (1448, 202))
+        self.assertIsNone(ImageChops.difference(generated, approved).getbbox())
 
     def test_expected_destinations_and_no_visible_text_navigation(self):
         readme = (ROOT / "README.md").read_text()
@@ -60,7 +75,7 @@ class ClickablePanelTests(unittest.TestCase):
             "https://github.com/4t-ritch/JDotParser",
             "https://github.com/4t-ritch/DCTI",
             "https://github.com/4t-ritch/lnx-df",
-            "https://x.com/Dot_Choco",
+            "https://x.com/4t_ritch",
             "https://www.rust-lang.org/",
             "https://isocpp.org/",
             "https://www.typescriptlang.org/",
