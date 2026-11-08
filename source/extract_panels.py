@@ -2,7 +2,7 @@ from pathlib import Path
 from PIL import Image
 import json
 ROOT = Path(__file__).resolve().parent.parent
-source = Image.open(ROOT/'source/approved-artwork-muted.png').convert('RGB')
+source = Image.open(ROOT/'source/approved-artwork-aged.png').convert('RGB')
 bounds = json.loads((ROOT/'source/crop-bounds.json').read_text())
 for name, (left, top, right, bottom) in bounds.items():
     source.crop((left, top, right, bottom)).save(ROOT/'assets'/f'{name}.png')
