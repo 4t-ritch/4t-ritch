@@ -1,6 +1,7 @@
 from pathlib import Path
 from PIL import Image
 import json
+import shutil
 ROOT = Path(__file__).resolve().parent.parent
 source = Image.open(ROOT/'source/approved-artwork-updated.png').convert('RGB')
 bounds = json.loads((ROOT/'source/crop-bounds.json').read_text())
@@ -35,4 +36,5 @@ regions = {
 }
 for name, region in regions.items():
     source.crop(region).save(clickable / f'{name}.png')
+shutil.copyfile(ROOT / 'source/player-amira-elfeky.png', ROOT / 'assets/10-player.png')
 print('Rebuilt', len(bounds) + len(regions) + 1, 'complete assets')
