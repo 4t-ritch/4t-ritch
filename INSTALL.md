@@ -1,28 +1,43 @@
-# 4tRitch — PS2 cybercore GitHub profile (faithful fix)
+# 4tRitch // PS2 CYBERCORE — kit de GitHub
 
-This package fixes the previous visual mismatch. The default README uses a crop of the **exact approved image**. The artwork has not been redrawn or restyled.
+Este kit preserva la composición del arte aprobado (en vez de recrearlo con cajas y fuentes nuevas). El README se compone de **36 fragmentos de imagen con enlaces independientes**.
 
-## Install — exact image, recommended
+## Instalación
 
-1. In `4tRitch/4tRitch`, keep a backup of the current README.
-2. Copy this package's `README.md` and **entire** `assets/` directory to the **repository root**.
-3. Commit/push. GitHub will display the graphic as a single continuous image.
-4. The three projects and social links immediately beneath the artwork are live links.
+1. Haz un respaldo del README actual de `4tRitch/4tRitch`.
+2. Copia **README.md** y la carpeta **assets/** completa a la raíz del repositorio.
+3. Haz commit/push a `main` y abre tu perfil.
+4. La variante `README-TEXT-CORRECTED.md` corrige los textos *dentro de las tarjetas* de Okaimono, webcore-ui y Clikity; para usarla renómbrala a `README.md`.
 
-## Alternative — clickable project card artwork
+## Qué funciona
 
-If you want each of the 3 cards in the artwork to be clickable individually, replace `README.md` with `README-LINKED-CARDS.md` (renaming it to `README.md`). This splits the approved image into 5 PNGs, but the split pixels reconstruct the exact original; a browser may insert a few pixels of HTML spacing between segments. The individual links point to Okaimono, webcore-ui and Clikity.
+- Las 3 tarjetas de proyectos abren sus enlaces correspondientes.
+- Los 10 iconos tecnológicos abren su sitio oficial o repositorio relacionado.
+- Las 4 opciones del menú lateral usan anclas locales; las zonas del footer también son enlaces.
+- `whoami` y `system status` son imágenes con enlaces útiles.
+- El reproductor es una ilustración; pulsarlo abre Spotify, pero **no reproduce nada dentro de GitHub**.
 
-## Important notes
+## Limitaciones y decisiones técnicas
 
-- This version guarantees a **visual match**, not native UI controls. The system menu and the audio player are just parts of a static image, as GitHub profile README does not run custom interactive web apps.
-- The artwork from the approved AI mockup contains inaccurate descriptions: Okaimono is an anime collection/calendar app, **not** a CLI shopping tool; Clikity is a Tauri/Svelte ClickUp task app, **not** a Go/TUI toolkit; webcore-ui is an educational study/demo, **not** a published component library. Those mistakes are still embedded in the original artwork because preserving its appearance was the priority for this fix. The real destinations below/within the image are correct.
-- Text in the art cannot be edited through Markdown; to correct it without spoiling the look requires a separate careful art-editing pass.
-- GitHub’s sidebar and pinned repo cards are outside the README and therefore unchanged.
-- The ZIP intentionally does not include any font files, third-party font dependencies, HTML/CSS overlays, fake GitHub chrome or the previous procedurally generated visuals.
+- **El texto dentro de los PNG no es editable desde Markdown.** La variante corregida reemplaza únicamente las columnas de texto de las tarjetas con una tipografía y textura similar.
+- Al ser varios fragmentos de una misma composición, las partes se unen con un solo `<p>` y separadores `<br />` para no heredar márgenes entre párrafos en GitHub.
+- No se utilizan CSS, JavaScript ni mapas de imágenes, que GitHub no permite en un README.
+- Las ilustraciones son estáticas. En móvil se reduce la escala y el texto puede ser pequeño.
+- `previews/` contiene capturas **locales aproximadas**, no capturas tomadas desde GitHub.com.
+- Los textos de la maqueta original eran conceptos visuales: por ejemplo Okaimono no es una CLI de compras, y Clikity no es una CLI/TUI. El bloque de texto accesible y la variante corregida contienen las descripciones correctas.
 
-## Verify asset fidelity
+## Contenido
 
-Run `python source/verify_pixel_match.py` from anywhere. It should print PASS.
+- `README.md`: fidelidad visual máxima con el arte aprobado.
+- `README-TEXT-CORRECTED.md`: variante con texto de tarjetas corregido.
+- `assets/`: cada pieza enlazable (incluye 3 tarjetas alternativas con texto corregido).
+- `assets/reference-art.png`: el arte aprobado del cual se derivan las piezas.
+- `source/rebuild.py`: regenera los fragmentos a partir de las imágenes de referencia.
 
-`PREVIEW-README.png` is the precise art image GitHub displays. `REFERENCE-APPROVED.png` is the previously approved full GitHub screenshot for comparison.
+## Nota sobre enlaces internos
+
+GitHub puede normalizar anclas HTML en ciertos contextos. Si tus anclas internas no funcionan, usa los enlaces externos de las tarjetas y los enlaces de navegación textual.
+
+## Variante adicional: paneles individuales completos
+
+Además se incluye `README-COMPLETE-PANELS.md` y `assets/complete-panels/`. Esta opción utiliza 10 recursos independientes, cada uno entero (no bandas cortadas). Conserva el diseño original, pero el menú lateral se comporta como un solo enlace; los enlaces individuales están en el desplegable de navegación textual.
