@@ -1,35 +1,42 @@
-<!-- PS2 Cybercore | GitHub-safe README | full-height, independent, linked image modules. -->
-<a id="profile"></a>
+<!-- 4tRitch // PS2 profile: complete independent panels, no chopped text or borders. -->
 <div align="center">
-<a href="https://github.com/4tRitch" title="4tRitch · software developer"><img src="assets/hero.png" width="100.000000%" alt="4tRitch · software developer" /></a><br />
-<a href="#navigation" title="Menu — see clickable navigation below"><img src="assets/panels/menu.png" width="19.816478%" alt="Menu — see clickable navigation below" /></a><a href="https://github.com/4tRitch?tab=repositories" title="About 4tRitch"><img src="assets/panels/whoami.png" width="41.082942%" alt="About 4tRitch" /></a><a href="https://github.com/4tRitch/lnx-df" title="My development environment"><img src="assets/panels/system-status.png" width="39.080580%" alt="My development environment" /></a><br />
-<a href="#tech-stack" title="Technology stack · links below"><img src="assets/tech/tech-stack.png" width="100.000000%" alt="Technology stack · links below" /></a><br />
-<a href="https://okaimono.dev/" title="Okaimono — anime collection manager"><img src="assets/projects/okaimono.png" width="33.142541%" alt="Okaimono — anime collection manager" /></a><a href="https://github.com/4tRitch/webcore-ui" title="webcore-ui — web retro UI experiments"><img src="assets/projects/webcore-ui.png" width="31.899696%" alt="webcore-ui — web retro UI experiments" /></a><a href="https://github.com/4tRitch/clikity" title="Clikity — Tauri ClickUp task creation"><img src="assets/projects/clikity.png" width="34.937762%" alt="Clikity — Tauri ClickUp task creation" /></a><br />
-<a href="#music" title="Decorative audio player · music information below"><img src="assets/music-player.png" width="100.000000%" alt="Decorative audio player · music information below" /></a><br />
-<a href="#navigation" title="Footer · links below"><img src="assets/footer/footer.png" width="100.000000%" alt="Footer · links below" /></a>
+<div><a href="#navigation" title="4tRitch — home / navigation"><img src="assets/01-hero.png" width="100%" align="top" alt="4tRitch — home / navigation"></a></div>
+<div><a href="#navigation" title="Navigation"><img src="assets/02-menu.png" width="19.86564%" align="top" alt="Navigation"></a><a href="#profile" title="Whoami · profile"><img src="assets/03-whoami.png" width="40.97287%" align="top" alt="Whoami · profile"></a><a href="https://github.com/4tRitch/lnx-df" title="System · Arch Linux / Hyprland"><img src="assets/04-system.png" width="39.04149%" align="top" alt="System · Arch Linux / Hyprland"></a></div>
+<div><a href="#tech" title="Tech stack"><img src="assets/05-stack.png" width="100%" align="top" alt="Tech stack"></a></div>
+<div><a href="#projects"><img src="assets/bands/04-projects.png" width="100%" align="top" alt="Featured projects — open verified links below"></a></div>
+<div><a href="#music" title="Decorative PS2 audio player"><img src="assets/10-player.png" width="100%" align="top" alt="Decorative PS2 audio player"></a></div>
+<div><a href="#navigation" title="Navigation footer"><img src="assets/11-footer.png" width="100%" align="top" alt="Navigation footer"></a></div>
 </div>
 
 <a id="navigation"></a>
 <details>
-<summary>SELECT ▸ Navigation / ナビゲーション</summary>
+<summary>◉ SYSTEM MENU — navigation</summary>
 
-[01 PROFILE](#profile)　·　[02 PROJECTS](#projects)　·　[03 TECH STACK](#tech-stack)　·　[04 CONTACT](#contact)
+[01 — Profile](#profile) · [02 — Projects](#projects) · [03 — Tech stack](#tech) · [04 — Contact](#contact)
+
+</details>
+
+<a id="profile"></a>
+<details>
+<summary>▣ WHOAMI — details</summary>
+
+Software developer focused on Rust, C#, TypeScript, Svelte, Linux and building useful interfaces and tools. I enjoy retro UI, anime, game development and automation.
 
 </details>
 
 <a id="projects"></a>
 <details>
-<summary>PROJECT FILES ▸ Open featured projects</summary>
+<summary>▤ PROJECT FILES — accurate descriptions and links</summary>
 
-- [Okaimono](https://okaimono.dev/) — Anime collection manager with calendar and Crew (Rust, Svelte, PostgreSQL).
-- [webcore-ui](https://github.com/4tRitch/webcore-ui) — Research and static demos of retro web portals from 2005–2008.
-- [Clikity](https://github.com/4tRitch/clikity) — Desktop app for creating ClickUp tasks from templates (Tauri, SvelteKit).
+- [**Okaimono**](https://okaimono.dev/) — Anime collection manager with calendar, collections and Crew. Built using Rust, Svelte and PostgreSQL.
+- [**webcore-ui**](https://github.com/4tRitch/webcore-ui) — Research and static HTML/CSS demos of Japanese retro portal UI from 2005–2008.
+- [**Clikity**](https://github.com/4tRitch/clikity) — Desktop ClickUp task creator built with Tauri, SvelteKit and TypeScript.
 
 </details>
 
-<a id="tech-stack"></a>
+<a id="tech"></a>
 <details>
-<summary>TECH STACK ▸ Open technology links</summary>
+<summary>▦ SYSTEM COMPONENTS — technology links</summary>
 
 [Rust](https://www.rust-lang.org/) · [C#](https://learn.microsoft.com/dotnet/csharp/) · [TypeScript](https://www.typescriptlang.org/) · [Svelte](https://svelte.dev/) · [Go](https://go.dev/) · [PostgreSQL](https://www.postgresql.org/) · [Docker](https://www.docker.com/) · [Arch Linux](https://archlinux.org/) · [Git](https://git-scm.com/) · [CLI / TUI](https://github.com/4tRitch/lnx-df)
 
@@ -37,13 +44,16 @@
 
 <a id="music"></a>
 <details>
-<summary>NOW PLAYING ▸ About the player</summary>
+<summary>♫ AUDIO — PS2 player</summary>
 
-The CD player is decorative PS2-era artwork; GitHub READMEs cannot run audio players or JavaScript.
+The CD player is artwork inspired by early-2000s music interfaces, not an actual audio player.
 
 </details>
 
 <a id="contact"></a>
-**CONTACT**　[GitHub](https://github.com/4tRitch)　·　[X / @Dot_Choco](https://x.com/Dot_Choco)
+<details>
+<summary>✉ CONTACT</summary>
 
-<sub>GitHub renders HTML and Markdown, but not custom CSS, JavaScript, CSS-based image overlays or image-map hotspots. This README uses separate clickable image panels.</sub>
+[GitHub](https://github.com/4tRitch) · [X / @Dot_Choco](https://x.com/Dot_Choco)
+
+</details>
